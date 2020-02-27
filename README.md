@@ -138,4 +138,4 @@ git add-symlink ../../../../../Ray2ShrooTool/Assets/Scripts/AwesomeMod Assets/Sc
 Use the project's [Issues](https://github.com/Shrooblord/R2RRotR/issues) page to report bugs, submit pull requests, talk about new features, etc. etc..
 
 ## License
-[QPL-1.0](https://opensource.org/licenses/QPL-1.0) for [R2ShrooTool](https://github.com/Shrooblord/R2ShrooTool); concerning the included [RayMap](https://github.com/Shrooblord/raymap) and [RaymapGame](https://github.com/Shrooblord/RaymapGame) sub-projects, all licensing rights reserved to the original creators of the projects. See their project homepages for more information.
+[QPL-1.0](https://opensource.org/licenses/QPL-1.0) for [R2ShrooTool](https://github.com/Shrooblord/R2ShrooTool) and the work done for the R2RRotR game; concerning the included [RayMap](https://github.com/Shrooblord/raymap) and [RaymapGame](https://github.com/Shrooblord/RaymapGame) sub-projects, all licensing rights reserved to the original creators of the projects. See their project homepages for more information.
