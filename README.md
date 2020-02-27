@@ -95,7 +95,20 @@ Take care not to confuse symlinks within the **RayMap** area of the project for 
 Use the `raymap` folder as the root of your project to mimic our in-house development environment.
 
 ##### Use the Git Symlink Commands We Installed
-Now that you have access to the git symlink commands from the **Prerequisites** installation step, you can commit symlinks in the main directory of the project (the **RayMap** submodule) to files and directories outside of it.
+###### Unpacking from Git to Windows
+Now that you have access to the git symlink commands from the **Prerequisites** installation step, we'll use the `rm-symlinks` one to change our git-friendly symlinks into Windows-friendly symlinks so that your development environment is all properly set up. Run this command in the main directory (`C:\...\R2RRotR`):
+`git submodule foreach --recursive git rm-symlinks`
+
+This will "unpack" all the symlinks for all submodules such that Windows can use them.
+
+###### Reversing Unpack
+In case you want to restore the git symlinks to their natural form (in a way git can use them but Windows cannot), run the following command:
+`git submodule foreach --recursive git checkout-symlinks`
+
+This returns your repo to its natural state, just as it was when you cloned it (as far as concerns the symlinks, that is).
+
+###### Packing from Windows to Git
+You can also commit your own symlinks in the main directory of the project (the **RayMap** submodule) to files and directories outside of it.
 
 Let's look at an example of that. Say I have created a new script within **R2ShrooTool** that I want to include in the main game (**R2RRotR**). This means that, somewhere within the **R2ShrooTool** project directory, there now is a new file called `MyAwesomeAddition.cs`.
 
