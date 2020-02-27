@@ -83,6 +83,12 @@ Then just clone this repository as you would any other. It contains three sub-re
 
 - **Ray2ShrooTool** is the meat of the game. All the custom-built level authoring tools, enemy AI, level designs, scripting, story dialogue, cutscenes, etc. are contained here. It is built on top of **RaymapGame** and hooks into and relies on it heavily.
 
+##### Unpacking from Git to Windows
+Now that you have access to the git symlink commands from the **Prerequisites** installation step, we'll use the `rm-symlinks` one to change our git-friendly symlinks into Windows-friendly symlinks so that your development environment is all properly set up. Run this command in the main directory (`C:\...\R2RRotR`):
+`git submodule foreach --recursive git rm-symlinks`
+
+This will "unpack" all the symlinks for all submodules such that Windows can use them.
+
 ## Development
 ##### Respect the Sub-Project Structure
 Additions made to [R2ShrooTool](https://github.com/Shrooblord/R2ShrooTool) should be made exclusively in the **R2ShrooTool** project directory, and pushed to the **R2ShrooTool** git repo (or your own fork of it). Only that way can I properly integrate your pull requests into the larger project!
@@ -95,11 +101,6 @@ Take care not to confuse symlinks within the **RayMap** area of the project for 
 Use the `raymap` folder as the root of your project to mimic our in-house development environment.
 
 ##### Use the Git Symlink Commands We Installed
-###### Unpacking from Git to Windows
-Now that you have access to the git symlink commands from the **Prerequisites** installation step, we'll use the `rm-symlinks` one to change our git-friendly symlinks into Windows-friendly symlinks so that your development environment is all properly set up. Run this command in the main directory (`C:\...\R2RRotR`):
-`git submodule foreach --recursive git rm-symlinks`
-
-This will "unpack" all the symlinks for all submodules such that Windows can use them.
 
 ###### Reversing Unpack
 In case you want to restore the git symlinks to their natural form (in a way git can use them but Windows cannot), run the following command:
