@@ -1,0 +1,9 @@
+[submodule "RaymapGame"]
+	path = RaymapGame
+	url = https://github.com/Shrooblord/RaymapGame
+[submodule "R2ShrooTool"]
+	path = R2ShrooTool
+	url = https://github.com/Shrooblord/R2ShrooTool
+[submodule "raymap"]
+	path = raymap
+	url = https://github.com/Shrooblord/raymap
