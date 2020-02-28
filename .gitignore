@@ -1,2 +1,3 @@
 __old/
-bin/__old/
+#bin/
+bin.7z
