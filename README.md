@@ -32,7 +32,7 @@ And so the development of my **Rayman 2** fangame, long since in the making, fin
 
 ### Playing the Game
 
-For playing the game as an end-user, simply find the latest version in the [Releases](https://github.com/Shrooblord/R2RRotR/releases) page.
+Coming Soon...
 
 
 ### Developing Your Own Stuff
