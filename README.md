@@ -57,10 +57,14 @@ Unfortunately, creating symlinks of files the generic way on Windows causes git 
 
 **ATTENTION!** Using the scripts or the manual commands below internally performs a `git checkout`, which could have potentially destructive consequences when used on a working directory with uncommitted files. Only use these files after you have committed or stashed your changes!
 
+###### What Do?
+These scripts are intended to be used to unpack and repack symlinks included in specifically the submodules of a given git repository.
+When checking out a git repo using symlinks, before using the environment on your Windows machine, run `unpack-repo.sh` or `up-symlinks-recur`. Before pushing to the remote from Windows (but after committing!), run `repack-repo.sh` or `rp-symlinks-recur`.
+
 ###### Give It to Me Nice and Easy
 Execute the shell scripts `unpack-repo.sh`, `repack-repo.sh` or `add-symlink.sh` as required; read on below for more information.
 
-Note that for git to operate on the symlinks, it needs to know about them. So either stage your changes (`git add`), or work on files that already were committed in the git history.
+Note that for git to operate on the symlinks, it needs to know about them. So initialise your symlinks (`git add-symlink`).
 
 ###### I Want to Do It Manually!
 You need to modify your global user `.gitconfig` in your home directory for git (`C:\Users\YOURNAME\.gitconfig` in a typical installation) to add the following three commands:
