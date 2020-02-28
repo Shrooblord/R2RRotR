@@ -63,8 +63,6 @@ When checking out the git repo, before using the environment on your Windows mac
 ###### Give It to Me Nice and Easy
 Execute the shell scripts `unpack-repo.sh`, `repack-repo.sh` or `add-symlink.sh` as required; read on below for more information.
 
-Note that for git to operate on the symlinks, it needs to know about them. So initialise your symlinks (`git add-symlink`).
-
 ###### I Want to Do It Manually!
 You need to modify your global user `.gitconfig` in your home directory for git (`C:\Users\YOURNAME\.gitconfig` in a typical installation) to add the following three commands:
 `git add-symlink`; `git rm-symlinks` & `git repack-symlinks`.
