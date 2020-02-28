@@ -65,7 +65,7 @@ Execute the shell scripts `unpack-repo.sh`, `repack-repo.sh` or `add-symlink.sh`
 
 ###### I Want to Do It Manually!
 You need to modify your global user `.gitconfig` in your home directory for git (`C:\Users\YOURNAME\.gitconfig` in a typical installation) to add the following three commands:
-`git add-symlink`; `git rm-symlinks` & `git repack-symlinks`.
+`git unpack-symlinks`; `git repack-symlinks` & `git add-symlink`.
 
 To do that, paste the following at the end of your `.gitconfig`file in order to create the three aliases required:
 
