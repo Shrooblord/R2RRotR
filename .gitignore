@@ -1,2 +1,3 @@
 __old/
-bin/__old/
+release/bin/
+release/*.7z
